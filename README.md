@@ -8,7 +8,7 @@ A timed trivia quiz web application built with HTML, CSS, and vanilla JavaScript
 2. Choose a category and difficulty (or leave them on "Any").
 3. Click **Start Quiz** and answer each of the 10 questions within 15 seconds.
 
-## Future Improvement
-
-With more time, I would add a question-by-question review on the results screen showing the player's selected answer alongside the correct answer for every question.
-
+## APP Screenshots
+![Screenshot 1](./screenshot1.png)
+![Screenshot 2](./screenshot2.png)
+![Screenshot 3](./screenshot3.png)
