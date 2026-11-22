@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen">
+            <h1>Quiz App</h1>
+            <p class="subtitle">Test your knowledge against the clock.</p>
+            <p id="best-score-text" class="best-score" hidden></p>
+
+            <div class="form-group">
+                <label for="category-select">Category</label>
+                <select id="category-select" name="category">
+                    <option value="">Any Category</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Entertainment: Books</option>
+                    <option value="11">Entertainment: Film</option>
+                    <option value="12">Entertainment: Music</option>
+                    <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                    <option value="14">Entertainment: Television</option>
+                    <option value="15">Entertainment: Video Games</option>
+                    <option value="16">Entertainment: Board Games</option>
+                    <option value="17">Science &amp; Nature</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="19">Science: Mathematics</option>
+                    <option value="20">Mythology</option>
+                    <option value="21">Sports</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="24">Politics</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                    <option value="27">Animals</option>
+                    <option value="28">Vehicles</option>
+                    <option value="29">Entertainment: Comics</option>
+                    <option value="30">Science: Gadgets</option>
+                    <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                    <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="difficulty-select">Difficulty</label>
+                <select id="difficulty-select" name="difficulty">
+                    <option value="">Any Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <button id="start-btn" type="button">Start Quiz</button>
+
+            <p id="loading-message" class="status-message" hidden>Loading...</p>
+
+            <div id="error-container" class="error-box" hidden>
+                <p id="error-message"></p>
+                <button id="try-again-btn" type="button">Try again</button>
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen" hidden>
+            <div class="quiz-header">
+                <span id="progress-text">Question 1 of 10</span>
+                <span id="timer-text">15s</span>
+                <span id="score-text">Score: 0</span>
+            </div>
+
+            <h2 id="question-text"></h2>
+
+            <div id="answers-container" class="answers-grid"></div>
+
+            <button id="next-btn" type="button" hidden>Next</button>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="screen" hidden>
+            <h2>Quiz Results</h2>
+            <p id="final-score"></p>
+            <p id="final-percentage"></p>
+            <p id="performance-message"></p>
+            <button id="play-again-btn" type="button">Play Again</button>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
